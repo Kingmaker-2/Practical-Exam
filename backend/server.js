@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.post('/calculate', (req, res) => {
-    const { items } = req.body; // Expecting an array of { name, quantity, price }
+    const { items } = req.body; 
     let totalCost = 0;
 
     items.forEach(item => {
